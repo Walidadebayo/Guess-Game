@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess</title>
+     <link rel="icon" href="OIP.jpg" style="height: auto; width: auto;">
+    <style>
+      body {
+        text-align: center;
+        background-image: linear-gradient(90deg, violet, pink);
+      }
+      #inpu {
+        padding: 2%;
+        border: 2px solid white;
+        border-radius: 100%;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        background-image: linear-gradient(45deg, blue, pink);
+        color:wheat;
+        text-align: center;
+        font-size: 30px;
+      }
+      #inpu:focus {
+        background-image: linear-gradient(45deg, white, blue);
+        color:aqua;
+        border: 3px solid indigo;
+        font-family: Verdana;
+        font-size: 20px;
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        border-radius: 100%;
+        outline: none;
+        text-align: center;
+      }
+      #sub {
+        padding: 1% 3%;
+        background-image: linear-gradient(45deg, cyan, violet);
+        margin-top: 4%;
+        font-size: 23px;
+        border: 2px solid blue;
+        color: violet;
+      }
+      #sub:hover {
+        cursor: pointer;
+        background-image: linear-gradient(45deg, pink, blue);
+      }
+      .bod{
+         width: 50%; 
+         padding: 40px; 
+          box-shadow: 2px 2px 30px inset indigo;
+           border-radius: 20px 50px;
+        margin-left: auto; 
+        margin-right: auto;
+        padding-bottom: 3%;
+        padding-top: 3%;
+        margin-top: 3.5%;
+      }
+      #gue {
+        font-size: 30px;
+        color: red;
+        border: 1px solid blue;
+        width: 2%;
+        margin-left: 45%;
+        padding: 2% 4%;
+      }
+    </style>
+</head>
+<body>
+
+  <div class="bod">
+    <h1 style="color: orangered;">Number Guess Game</h1>
+    <h2 style="color:chartreuse;">The system has choose a number between 1 and 5.</h2>
+    <p style="color: aqua; font-size: 25px;">Input the number you Guess and Click submit</p>
+ 
+    <input type="text"  id="inpu">
+    <br />
+    <input type="submit" value="Check" id="sub" onclick="myFunction()">
+    <p id="gue"></p>
+    </div>
+<script>
+</script>
+    <script src="Guess.js"></script>
+</html>
